@@ -8,7 +8,7 @@ function str(prim) {
   return prim;
 }
 
-var logo = (require('./assets/logo.png'));
+var logo = (require('./assets/Logo.png'));
 
 var headerImgae = (require('./assets/anugraha.png'));
 

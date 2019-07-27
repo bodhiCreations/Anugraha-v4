@@ -1,5 +1,5 @@
 let str = ReasonReact.string;
-let logo: string = [%raw "require('./assets/logo.png')"];
+let logo: string = [%raw "require('./assets/Logo.png')"];
 let headerImgae: string = [%raw "require('./assets/anugraha.png')"];
 
 let ar01: string = [%raw "require('./assets/ARCHITECTURE/01.jpg')"];
