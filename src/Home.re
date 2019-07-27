@@ -136,7 +136,7 @@ let make = () =>
           }
           <p className="pt-6"> {"Kottayam 686015" |> str} </p>
           <p className=""> {"Kerala, India" |> str} </p>
-          <p className="pt-6"> {"anugraha@gmail.com" |> str} </p>
+          <p className="pt-6"> {"contact@anugrahakerala.com" |> str} </p>
           <p className=""> {"+91 989232 92292" |> str} </p>
         </div>
       </div>

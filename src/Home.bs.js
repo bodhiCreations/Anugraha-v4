@@ -151,7 +151,7 @@ function Home(Props) {
                               className: ""
                             }, "Kerala, India"), React.createElement("p", {
                               className: "pt-6"
-                            }, "anugraha@gmail.com"), React.createElement("p", {
+                            }, "contact@anugrahakerala.com"), React.createElement("p", {
                               className: ""
                             }, "+91 989232 92292")))));
 }
