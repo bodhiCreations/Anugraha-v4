@@ -75,11 +75,11 @@ function renderTwoImages(image1, image2) {
   return React.createElement("div", {
               className: "md:flex md:mt-10"
             }, React.createElement("img", {
-                  className: "md:w-1/2 md:pr-5 mt-4",
+                  className: "md:w-1/2 md:pr-5 mt-4 h-auto",
                   alt: image1,
                   src: image1
                 }), React.createElement("img", {
-                  className: "md:w-1/2 md:pl-5 mt-4",
+                  className: "md:w-1/2 md:pl-5 mt-4 h-auto",
                   alt: image2,
                   src: image2
                 }));

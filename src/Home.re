@@ -46,8 +46,8 @@ let renderHeading = heading =>
 
 let renderTwoImages = (image1, image2) =>
   <div className="md:flex md:mt-10">
-    <img className="md:w-1/2 md:pr-5 mt-4" src=image1 alt=image1 />
-    <img className="md:w-1/2 md:pl-5 mt-4" src=image2 alt=image2 />
+    <img className="md:w-1/2 md:pr-5 mt-4 h-auto" src=image1 alt=image1 />
+    <img className="md:w-1/2 md:pl-5 mt-4 h-auto" src=image2 alt=image2 />
   </div>;
 
 let renderThreeImages = (image1, image2, image3) =>
