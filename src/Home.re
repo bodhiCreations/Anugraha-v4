@@ -61,8 +61,8 @@ let renderThreeImages = (image1, image2, image3) =>
 let make = () =>
   <div>
     <section className="md:py-10 pt-10 pb-4">
-      <div className="flex justify-center px-4 md:pb-10 pb-4">
-        <img className="px-4 h-full w-auto"src=logo alt="logo" />
+      <div className="flex justify-center clearfix px-4 md:pb-10 pb-4">
+        <img className="float-center"src=logo alt="logo" />
       </div>
       <div className="mt-4"> <img src=headerImgae alt="logo" /> </div>
       {

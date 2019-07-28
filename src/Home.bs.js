@@ -107,9 +107,9 @@ function Home(Props) {
   return React.createElement("div", undefined, React.createElement("section", {
                   className: "md:py-10 pt-10 pb-4"
                 }, React.createElement("div", {
-                      className: "flex justify-center px-4 md:pb-10 pb-4"
+                      className: "flex justify-center clearfix px-4 md:pb-10 pb-4"
                     }, React.createElement("img", {
-                          className: "px-4 h-full w-auto",
+                          className: "px-4 h-full float-center",
                           alt: "logo",
                           src: logo
                         })), React.createElement("div", {
