@@ -6,10 +6,12 @@
 
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond");
 
-@font-face {
-  font-family: "display";
-  src: local("roman.otf");
-}
+/* @import url("./fonts/GaramondFBText-LightItalic.otf"); */
+
+/* @font-face {
+  font-family: "garamond-fb-text", "serif";
+
+} */
 body {
-  font-family: "EB+Garamond";
+  font-family: garamond-fb-text, serif;
 }
