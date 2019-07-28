@@ -45,16 +45,16 @@ let renderHeading = heading =>
   <div className="md:mt-10 mt-4 md:text-6xl text-4xl"> {heading |> str} </div>;
 
 let renderTwoImages = (image1, image2) =>
-  <div className="md:flex md:mt-10">
-    <img className="md:w-1/2 md:pr-5 mt-4 h-auto" src=image1 alt=image1 />
-    <img className="md:w-1/2 md:pl-5 mt-4 h-auto" src=image2 alt=image2 />
+  <div className="md:flex md:mt-6">
+    <img className="md:w-1/2 md:pr-5 mt-4 md:h-full" src=image1 alt=image1 />
+    <img className="md:w-1/2 md:pl-5 mt-4 md:h-full" src=image2 alt=image2 />
   </div>;
 
 let renderThreeImages = (image1, image2, image3) =>
-  <div className="md:flex md:mt-10">
-    <img className="md:w-1/3 md:pr-5 mt-4" src=image1 alt=image1 />
-    <img className="md:w-1/3 md:pl-5 md:pr-5 mt-4" src=image2 alt=image2 />
-    <img className="md:w-1/3 md:pl-5 mt-4" src=image3 alt=image3 />
+  <div className="md:flex md:mt-2 md:-mr-5">
+    <img className="md:w-1/3 md:pr-5 mt-4 md:h-full" src=image1 alt=image1 />
+    <img className="md:w-1/3 md:pr-5 mt-4 md:h-full" src=image2 alt=image2 />
+    <img className="md:w-1/3 md:pr-5 mt-4 md:h-full" src=image3 alt=image3 />
   </div>;
 
 [@react.component]
@@ -62,7 +62,7 @@ let make = () =>
   <div>
     <section className="md:py-10 pt-10 pb-4">
       <div className="flex justify-center px-4 md:pb-10 pb-4">
-        <img src=logo alt="logo" />
+        <img className="px-4 h-full w-auto"src=logo alt="logo" />
       </div>
       <div className="mt-4"> <img src=headerImgae alt="logo" /> </div>
       {

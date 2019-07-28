@@ -73,13 +73,13 @@ function renderHeading(heading) {
 
 function renderTwoImages(image1, image2) {
   return React.createElement("div", {
-              className: "md:flex md:mt-10"
+              className: "md:flex md:mt-6"
             }, React.createElement("img", {
-                  className: "md:w-1/2 md:pr-5 mt-4 h-auto",
+                  className: "md:w-1/2 md:pr-5 mt-4 md:h-full",
                   alt: image1,
                   src: image1
                 }), React.createElement("img", {
-                  className: "md:w-1/2 md:pl-5 mt-4 h-auto",
+                  className: "md:w-1/2 md:pl-5 mt-4 md:h-full",
                   alt: image2,
                   src: image2
                 }));
@@ -87,17 +87,17 @@ function renderTwoImages(image1, image2) {
 
 function renderThreeImages(image1, image2, image3) {
   return React.createElement("div", {
-              className: "md:flex md:mt-10"
+              className: "md:flex md:mt-2 md:-mr-5"
             }, React.createElement("img", {
-                  className: "md:w-1/3 md:pr-5 mt-4",
+                  className: "md:w-1/3 md:pr-5 mt-4 md:h-full",
                   alt: image1,
                   src: image1
                 }), React.createElement("img", {
-                  className: "md:w-1/3 md:pl-5 md:pr-5 mt-4",
+                  className: "md:w-1/3 md:pr-5 mt-4 md:h-full",
                   alt: image2,
                   src: image2
                 }), React.createElement("img", {
-                  className: "md:w-1/3 md:pl-5 mt-4",
+                  className: "md:w-1/3 md:pr-5 mt-4 md:h-full",
                   alt: image3,
                   src: image3
                 }));
@@ -109,6 +109,7 @@ function Home(Props) {
                 }, React.createElement("div", {
                       className: "flex justify-center px-4 md:pb-10 pb-4"
                     }, React.createElement("img", {
+                          className: "px-4 h-full w-auto",
                           alt: "logo",
                           src: logo
                         })), React.createElement("div", {
