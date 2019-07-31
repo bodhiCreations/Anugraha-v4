@@ -12,7 +12,7 @@ var logo = (require('./assets/Logo.png'));
 
 var headerImgae = (require('./assets/anugraha.jpg'));
 
-var ar01 = (require('./assets/ARCHITECTURE/01.jpg'));
+var ar01 = (require('./assets/ARCHITECTURE/01.png'));
 
 var ar02 = (require('./assets/ARCHITECTURE/02.jpg'));
 
@@ -105,7 +105,7 @@ function renderThreeImages(image1, image2, image3) {
 
 function Home(Props) {
   return React.createElement("div", undefined, React.createElement("section", {
-                  className: "md:py-4pt-10 pb-4"
+                  className: "md:py-10 pt-10 pb-4"
                 }, React.createElement("div", {
                       className: "flex justify-center clearfix px-4 md:pb-10 pb-4"
                     }, React.createElement("img", {

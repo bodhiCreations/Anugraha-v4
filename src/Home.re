@@ -2,7 +2,7 @@ let str = ReasonReact.string;
 let logo: string = [%raw "require('./assets/Logo.png')"];
 let headerImgae: string = [%raw "require('./assets/anugraha.jpg')"];
 
-let ar01: string = [%raw "require('./assets/ARCHITECTURE/01.jpg')"];
+let ar01: string = [%raw "require('./assets/ARCHITECTURE/01.png')"];
 let ar02: string = [%raw "require('./assets/ARCHITECTURE/02.jpg')"];
 let i01: string = [%raw "require('./assets/INTERIOR/01.jpg')"];
 let i02: string = [%raw "require('./assets/INTERIOR/02.jpg')"];
@@ -58,7 +58,7 @@ let renderThreeImages = (image1, image2, image3) =>
 [@react.component]
 let make = () =>
   <div>
-    <section className="md:py-4pt-10 pb-4">
+    <section className="md:py-10 pt-10 pb-4">
       <div className="flex justify-center clearfix px-4 md:pb-10 pb-4">
         <img className="float-center" src=logo alt="logo" />
       </div>
