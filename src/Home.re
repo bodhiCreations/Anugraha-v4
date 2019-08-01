@@ -2,8 +2,10 @@ let str = ReasonReact.string;
 let logo: string = [%raw "require('./assets/Logo.png')"];
 let headerImgae: string = [%raw "require('./assets/anugraha.jpg')"];
 
-let ar01: string = [%raw "require('./assets/ARCHITECTURE/01.png')"];
-let ar02: string = [%raw "require('./assets/ARCHITECTURE/02.jpg')"];
+let ar01: string = [%raw "require('./assets/ARCHITECTURE/01.jpg')"];
+let ar02: string = [%raw "require('./assets/ARCHITECTURE/02.png')"];
+let ar03: string = [%raw "require('./assets/ARCHITECTURE/03.jpg')"];
+let ar04: string = [%raw "require('./assets/ARCHITECTURE/04.jpg')"];
 let i01: string = [%raw "require('./assets/INTERIOR/01.jpg')"];
 let i02: string = [%raw "require('./assets/INTERIOR/02.jpg')"];
 let i03: string = [%raw "require('./assets/INTERIOR/03.jpg')"];
@@ -19,7 +21,7 @@ let b03: string = [%raw "require('./assets/BACKWATERS/03.jpg')"];
 let b04: string = [%raw "require('./assets/BACKWATERS/04.jpg')"];
 
 let renderText = (caption, description) =>
-  <div className="md:flex w-full md:mt-10 mt-4 md:py-10 py-4">
+  <div className="md:flex w-full md:mt-10 mt-4 py-4">
     <div className="md:w-2/5 md:text-4xl text-2xl"> {caption |> str} </div>
     <div className="md:w-3/5 md:text-xl text-sm md:pt-0 pt-2">
       {
@@ -43,9 +45,9 @@ let renderHeading = heading =>
   <div className="md:mt-10 mt-4 md:text-5xl text-3xl"> {heading |> str} </div>;
 
 let renderTwoImages = (image1, image2) =>
-  <div className="md:flex md:mt-6">
-    <img className="md:w-1/2 md:pr-5 mt-4 md:h-full" src=image1 alt=image1 />
-    <img className="md:w-1/2 md:pl-5 mt-4 md:h-full" src=image2 alt=image2 />
+  <div className="md:flex">
+    <img className="md:w-1/2 md:pr-5 md:mt-8 mt-4 md:h-full" src=image1 alt=image1 />
+    <img className="md:w-1/2 md:pl-5 md:mt-8 mt-4 md:h-full" src=image2 alt=image2 />
   </div>;
 
 let renderThreeImages = (image1, image2, image3) =>
@@ -63,21 +65,27 @@ let make = () =>
         <img className="float-center" src=logo alt="logo" />
       </div>
       <div className="mt-4"> <img src=headerImgae alt="logo" /> </div>
-      {
-        renderText(
-          "A SANCTUARY",
-          [|
+      <div className="md:flex w-full md:mt-10 mt-4 py-4">
+        <div className="md:w-2/5 md:text-4xl text-2xl">
+          {"Keralan Getaway" |> str}
+        </div>
+        <div className="md:w-3/5 md:text-xl text-sm md:pt-0 pt-2">
+          {
             "Villa Anugraha is an elegant private residence in Aimanam, in the central Kerala district of
-            Kottayam. This home along the backwaters of the Meenachil River is an ode to slow living,
-            thoughtful design and the natural splendors of Kerala-that place they call 'God's Own
-            Country'. Aimanam was also the setting of Arundhati Roy's 1997 Booker Prize-winning novel
-            God of Small Things.",
-          |],
-        )
-      }
+          Kottayam. This home along the backwaters of the Meenachil River is an ode to slow living,
+          thoughtful design and the natural splendors of Kerala-that place they call 'God's Own
+          Country'. Aimanam was also the setting of Arundhati Roy's 1997 Booker Prize-winning novel "
+            |> str
+          }
+          <span className="italic">
+            {"The God of Small Things." |> str}
+          </span>
+        </div>
+      </div>
     </section>
     <section className="md:py-4pt-10 pb-4">
       {renderTwoImages(ar01, ar02)}
+      {renderTwoImages(ar03, ar04)}
       {
         renderText(
           "ARCHITECTURE",
@@ -90,7 +98,7 @@ let make = () =>
             "Villa Anugraha is a classic Keralan building, constructed more than a century ago. It was
             restored under the direction of architect Bijoy Jain of Studio Mumbai and styled with
             contemporary art from the homeowner's private collection, and an edit of design objects.",
-            "TIt is part of a 7.5 - acre property that is punctuated by canals, a thriving pond, vegetable
+            "it is part of a 7.5 - acre property that is punctuated by canals, a thriving pond, vegetable
             garden, many varieties of tropical fruit trees, hardwoods, bamboo, and various kinds of
             ferns, designed and laid out by award-winning landscape architect Tom Stuart-Smith. Being
             in the tropical countryside, there are charming multilegged creatures everywhere; they mean
@@ -135,34 +143,29 @@ let make = () =>
             tour of key historical sites around Kottayam.",
             "The airport nearest to Kottayam city is the Kochi International airport, which is 2.5 hours
             away.",
+            "For more information and further details, please write to us contact@anugrahakerala.com
+            Or give us a call on +91 94956 31122.",
           |],
         )
       }
     </section>
     <section className="md:py-4pt-10 pb-4">
-      {
-        renderText(
-          "CONTACT",
-          [|
-            "For more information and further details, please write to us contact@anugrahakerala.com .
-            Or give us a call on +91 94956 31122.",
-          |],
-        )
-      }
+      {renderText("CONTACT", [|""|])}
       <div className="md:flex w-full md:-mt-10 -mt-4 mt-4 py-4">
         <div className="md:w-2/5 md:pt-0 pt-2 justify-right" />
         <div
-          className="md:w-3/5 md:text-xl text-sm md:pt-0 pt-2 justify-right">
+          className="md:w-3/5 md:text-xl text-sm md:pt-0 pt-2 justify-right -mt-12">
           {
             renderlines([|
               "Anugraha Puthenpurayil",
               "Prapuzha Kadavu",
-              "Pulikuttissery P.o.",
-              "Aymanam.",
+              "Pulikkuttissery PO",
+              "Aimanam.",
+              "Kottayam 686015",
+              "Kerala, India"
+
             |])
           }
-          <p className="pt-6"> {"Kottayam 686015" |> str} </p>
-          <p className=""> {"Kerala, India" |> str} </p>
         </div>
       </div>
     </section>
