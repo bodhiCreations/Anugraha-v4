@@ -5,13 +5,25 @@
 @import "tailwindcss/utilities";
 
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond");
+@import url("https://db.onlinewebfonts.com/c/b2fa2a4eb6f996bdab8e86031e224af9?family=ThrohandW01-PenRoman");
 
 /* @import url("./fonts/GaramondFBText-LightItalic.otf"); */
 
-/* @font-face {
-  font-family: "garamond-fb-text", "serif";
-
-} */
+@font-face {
+  font-family: "roman";
+  src: url(/src/fonts/roman.otf);
+}
+@font-face {
+  font-family: "ThrohandW01-PenRoman";
+  src: url("https://db.onlinewebfonts.com/t/b2fa2a4eb6f996bdab8e86031e224af9.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/b2fa2a4eb6f996bdab8e86031e224af9.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/b2fa2a4eb6f996bdab8e86031e224af9.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/b2fa2a4eb6f996bdab8e86031e224af9.ttf")
+      format("truetype");
+}
 body {
-  font-family: garamond-fb-text, serif;
+  font-family: ThrohandW01-PenRoman, serif;
 }
