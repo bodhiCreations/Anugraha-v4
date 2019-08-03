@@ -52,7 +52,7 @@ function renderText(caption, description) {
             }, React.createElement("div", {
                   className: "md:w-2/5 md:text-4xl text-2xl"
                 }, caption), React.createElement("div", {
-                  className: "md:w-3/5 md:text-xl text-sm md:pt-0 pt-2"
+                  className: "md:w-3/5 md:text-xl text-md md:pt-0 pt-2"
                 }, $$Array.map((function (para) {
                         return React.createElement("p", {
                                     key: para,
@@ -79,11 +79,11 @@ function renderTwoImages(image1, image2) {
   return React.createElement("div", {
               className: "md:flex"
             }, React.createElement("img", {
-                  className: "md:w-1/2 md:pr-5 md:mt-8 mt-4 md:h-full",
+                  className: "md:w-1/2 md:pr-2 md:mt-4 mt-4 md:h-full",
                   alt: image1,
                   src: image1
                 }), React.createElement("img", {
-                  className: "md:w-1/2 md:pl-5 md:mt-8 mt-4 md:h-full",
+                  className: "md:w-1/2 md:pl-2 md:mt-4 mt-4 md:h-full",
                   alt: image2,
                   src: image2
                 }));
@@ -124,20 +124,20 @@ function Home(Props) {
                         })), React.createElement("div", {
                       className: "md:flex w-full md:mt-10 mt-4 py-4"
                     }, React.createElement("div", {
-                          className: "md:w-2/5 md:text-4xl text-2xl"
-                        }, "Keralan Getaway"), React.createElement("div", {
-                          className: "md:w-3/5 md:text-xl text-sm md:pt-0 pt-2"
+                          className: "md:w-2/5 md:text-4xl text-2xl md:-mt-2"
+                        }, "KERALAN GETAWAY"), React.createElement("div", {
+                          className: "md:w-3/5 md:text-xl text-md md:pt-0 pt-2"
                         }, "Villa Anugraha is an elegant private residence in Aimanam, in the central Kerala district of\n          Kottayam. This home along the backwaters of the Meenachil River is an ode to slow living,\n          thoughtful design and the natural splendors of Kerala-that place they call 'God's Own\n          Country'. Aimanam was also the setting of Arundhati Roy's 1997 Booker Prize-winning novel ", React.createElement("span", {
                               className: "italic"
                             }, "The God of Small Things.")))), React.createElement("section", {
                   className: "md:py-4pt-10 pb-4"
-                }, renderTwoImages(ar01, ar02), renderTwoImages(ar03, ar04), renderText("ARCHITECTURE", /* array */[
+                }, renderTwoImages(ar01, ar04), renderTwoImages(ar02, ar03), renderText("ARCHITECTURE", /* array */[
                       "The Villa is designed as a one-key property, ensuring that guests have privacy and a certain\n            amount of seclusion, whilst staying within a thriving estate which is also inhabited by the\n            family that runs Anugraha, and includes their three dogs, Google, Zuma and Pepper. Guests\n            will have the Villa to themselves, much as if it were their own house in the Keralan\n            countryside.",
                       "Villa Anugraha is a classic Keralan building, constructed more than a century ago. It was\n            restored under the direction of architect Bijoy Jain of Studio Mumbai and styled with\n            contemporary art from the homeowner's private collection, and an edit of design objects.",
-                      "it is part of a 7.5 - acre property that is punctuated by canals, a thriving pond, vegetable\n            garden, many varieties of tropical fruit trees, hardwoods, bamboo, and various kinds of\n            ferns, designed and laid out by award-winning landscape architect Tom Stuart-Smith. Being\n            in the tropical countryside, there are charming multilegged creatures everywhere; they mean\n            no harm and they are an essential part of the life cycle of our part of the world."
+                      "It is part of a 7.5 - acre property that is punctuated by canals, a thriving pond, vegetable\n            garden, many varieties of tropical fruit trees, hardwoods, bamboo, and various kinds of\n            ferns, designed and laid out by award-winning landscape architect Tom Stuart-Smith. Being\n            in the tropical countryside, there are charming multilegged creatures everywhere; they mean\n            no harm and they are an essential part of the life cycle of our part of the world."
                     ])), React.createElement("section", {
                   className: "md:py-4pt-10 pb-4"
-                }, renderThreeImages(i01, i02, i03), renderThreeImages(i04, i05, i06), renderThreeImages(i07, i08, i09), renderText("THE INTERIORS", /* array */[
+                }, renderThreeImages(i01, i02, i03), renderThreeImages(i04, i05, i06), renderThreeImages(i07, i08, i09), renderText("INTERIORS", /* array */[
                       "The Villa can house up to six people, between a Master Bedroom, and the Attic Room.\n            While public areas like the living and dining rooms do not have air-conditioning, the\n            bedrooms are airconditioned. And there's WIFI, of course. The property is perfectly suited\n            for a couple, a family of four or six, or a party of six.",
                       "Anugraha's visitors are guests of the family, and they will be served homecooked Keralan\n            meals and attended by members of the house staff. Those who wish to cook occasionally\n            may use the Villa's well-appointed kitchen, and we will help you get the ingredients together.\n            Much of the produce comes from the organic kitchen garden, and around the village where\n            Anugraha is located."
                     ])), React.createElement("section", {
@@ -146,7 +146,8 @@ function Home(Props) {
                       "The property has a swimming pool that is suitable for adults and children. It is located within\n            a pool house that also contains a massage room where, upon request, we can arrange for a\n            traditional therapeutic Keralan massage.",
                       "We encourage guests to take things slow, enjoy the food and the environment. The local\n            boatman offers rides on the river that is the artery of this area. We can also arrange for a\n            tour of key historical sites around Kottayam.",
                       "The airport nearest to Kottayam city is the Kochi International airport, which is 2.5 hours\n            away.",
-                      "For more information and further details, please write to us contact@anugrahakerala.com\n            Or give us a call on +91 94956 31122."
+                      "For more information and further details, please write to us contact@anugrahakerala.com or give us a call on +9194956 31122.",
+                      "We are grateful to our friends who photographed Anugraha: Ashish Sahi, Derry Moore, and Wei Leng Tay."
                     ])), React.createElement("section", {
                   className: "md:py-4pt-10 pb-4"
                 }, renderText("CONTACT", /* array */[""]), React.createElement("div", {
@@ -154,7 +155,7 @@ function Home(Props) {
                     }, React.createElement("div", {
                           className: "md:w-2/5 md:pt-0 pt-2 justify-right"
                         }), React.createElement("div", {
-                          className: "md:w-3/5 md:text-xl text-sm md:pt-0 pt-2 justify-right -mt-12"
+                          className: "md:w-3/5 md:text-xl text-md md:pt-0 pt-2 justify-right -mt-12"
                         }, renderlines(/* array */[
                               "Anugraha Puthenpurayil",
                               "Prapuzha Kadavu",

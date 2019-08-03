@@ -23,7 +23,7 @@ let b04: string = [%raw "require('./assets/BACKWATERS/04.jpg')"];
 let renderText = (caption, description) =>
   <div className="md:flex w-full md:mt-10 mt-4 py-4">
     <div className="md:w-2/5 md:text-4xl text-2xl"> {caption |> str} </div>
-    <div className="md:w-3/5 md:text-xl text-sm md:pt-0 pt-2">
+    <div className="md:w-3/5 md:text-xl text-md md:pt-0 pt-2">
       {
         description
         |> Array.map(para => <p key=para className="pt-4"> {para |> str} </p>)
@@ -46,8 +46,16 @@ let renderHeading = heading =>
 
 let renderTwoImages = (image1, image2) =>
   <div className="md:flex">
-    <img className="md:w-1/2 md:pr-5 md:mt-8 mt-4 md:h-full" src=image1 alt=image1 />
-    <img className="md:w-1/2 md:pl-5 md:mt-8 mt-4 md:h-full" src=image2 alt=image2 />
+    <img
+      className="md:w-1/2 md:pr-2 md:mt-4 mt-4 md:h-full"
+      src=image1
+      alt=image1
+    />
+    <img
+      className="md:w-1/2 md:pl-2 md:mt-4 mt-4 md:h-full"
+      src=image2
+      alt=image2
+    />
   </div>;
 
 let renderThreeImages = (image1, image2, image3) =>
@@ -66,10 +74,10 @@ let make = () =>
       </div>
       <div className="mt-4"> <img src=headerImgae alt="logo" /> </div>
       <div className="md:flex w-full md:mt-10 mt-4 py-4">
-        <div className="md:w-2/5 md:text-4xl text-2xl">
-          {"Keralan Getaway" |> str}
+        <div className="md:w-2/5 md:text-4xl text-2xl md:-mt-2">
+          {"KERALAN GETAWAY" |> str}
         </div>
-        <div className="md:w-3/5 md:text-xl text-sm md:pt-0 pt-2">
+        <div className="md:w-3/5 md:text-xl text-md md:pt-0 pt-2">
           {
             "Villa Anugraha is an elegant private residence in Aimanam, in the central Kerala district of
           Kottayam. This home along the backwaters of the Meenachil River is an ode to slow living,
@@ -77,15 +85,13 @@ let make = () =>
           Country'. Aimanam was also the setting of Arundhati Roy's 1997 Booker Prize-winning novel "
             |> str
           }
-          <span className="italic">
-            {"The God of Small Things." |> str}
-          </span>
+          <span className="italic"> {"The God of Small Things." |> str} </span>
         </div>
       </div>
     </section>
     <section className="md:py-4pt-10 pb-4">
-      {renderTwoImages(ar01, ar02)}
-      {renderTwoImages(ar03, ar04)}
+      {renderTwoImages(ar01, ar04)}
+      {renderTwoImages(ar02, ar03)}
       {
         renderText(
           "ARCHITECTURE",
@@ -98,7 +104,7 @@ let make = () =>
             "Villa Anugraha is a classic Keralan building, constructed more than a century ago. It was
             restored under the direction of architect Bijoy Jain of Studio Mumbai and styled with
             contemporary art from the homeowner's private collection, and an edit of design objects.",
-            "it is part of a 7.5 - acre property that is punctuated by canals, a thriving pond, vegetable
+            "It is part of a 7.5 - acre property that is punctuated by canals, a thriving pond, vegetable
             garden, many varieties of tropical fruit trees, hardwoods, bamboo, and various kinds of
             ferns, designed and laid out by award-winning landscape architect Tom Stuart-Smith. Being
             in the tropical countryside, there are charming multilegged creatures everywhere; they mean
@@ -113,7 +119,7 @@ let make = () =>
       {renderThreeImages(i07, i08, i09)}
       {
         renderText(
-          "THE INTERIORS",
+          "INTERIORS",
           [|
             "The Villa can house up to six people, between a Master Bedroom, and the Attic Room.
             While public areas like the living and dining rooms do not have air-conditioning, the
@@ -143,8 +149,8 @@ let make = () =>
             tour of key historical sites around Kottayam.",
             "The airport nearest to Kottayam city is the Kochi International airport, which is 2.5 hours
             away.",
-            "For more information and further details, please write to us contact@anugrahakerala.com
-            Or give us a call on +91 94956 31122.",
+            "For more information and further details, please write to us contact@anugrahakerala.com or give us a call on +9194956 31122.",
+            "We are grateful to our friends who photographed Anugraha: Ashish Sahi, Derry Moore, and Wei Leng Tay.",
           |],
         )
       }
@@ -154,7 +160,7 @@ let make = () =>
       <div className="md:flex w-full md:-mt-10 -mt-4 mt-4 py-4">
         <div className="md:w-2/5 md:pt-0 pt-2 justify-right" />
         <div
-          className="md:w-3/5 md:text-xl text-sm md:pt-0 pt-2 justify-right -mt-12">
+          className="md:w-3/5 md:text-xl text-md md:pt-0 pt-2 justify-right -mt-12">
           {
             renderlines([|
               "Anugraha Puthenpurayil",
@@ -162,8 +168,7 @@ let make = () =>
               "Pulikkuttissery PO",
               "Aimanam.",
               "Kottayam 686015",
-              "Kerala, India"
-
+              "Kerala, India",
             |])
           }
         </div>
