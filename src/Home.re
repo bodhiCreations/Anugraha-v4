@@ -36,7 +36,7 @@ let renderForm = () =>
   <form
     className="max-w-xl"
     id="contactform"
-    action="https://formsubmit.io/send/bodhish@gmail.com"
+    action="https://formspree.io/bodhish@gmail.com"
     method="POST">
     <div className="w-full mt-4">
       <input

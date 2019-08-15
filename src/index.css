@@ -13,7 +13,7 @@
   font-family: "roman";
   src: url(/src/fonts/roman.otf);
 } */
-/* @font-face {
+@font-face {
   font-family: "ThrohandW01-PenRoman";
   src: url("https://db.onlinewebfonts.com/t/b2fa2a4eb6f996bdab8e86031e224af9.eot?#iefix")
       format("embedded-opentype"),
@@ -23,13 +23,13 @@
       format("woff"),
     url("https://db.onlinewebfonts.com/t/b2fa2a4eb6f996bdab8e86031e224af9.ttf")
       format("truetype");
-} */
+}
 
-@font-face {
+/* @font-face {
   font-family: "ThrohandW01-PenRoman";
   src: url("http://db.onlinewebfonts.com/t/b2fa2a4eb6f996bdab8e86031e224af9.ttf")
     format("truetype");
-}
+} */
 
 body {
   font-family: ThrohandW01-PenRoman, serif;
