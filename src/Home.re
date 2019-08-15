@@ -74,7 +74,7 @@ let renderForm = () =>
         rows=3
       />
     </div>
-    <input className="_formsubmit_id hidden" name="_formsubmit_id" type_="text" >
+    <input className="_formsubmit_id hidden" name="_formsubmit_id" type_="text" />
     <input
       className="Submit flex-none bg-gray-900 uppercase hover:bg-gray-600 focus:outline-none focus:bg-primary-800 text-sm text-white font-bold py-2 px-6 tracking-normal rounded-lg mt-4"
       value="Send Message"

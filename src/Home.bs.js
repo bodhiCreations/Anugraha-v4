@@ -72,6 +72,7 @@ function renderForm(param) {
                 }, React.createElement("input", {
                       className: "name appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400",
                       id: "name",
+                      name: "name",
                       placeholder: "Enter your name",
                       type: "text"
                     })), React.createElement("div", {
@@ -79,6 +80,7 @@ function renderForm(param) {
                 }, React.createElement("input", {
                       className: "email appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400",
                       id: "email",
+                      name: "email",
                       placeholder: "Enter your email",
                       type: "email"
                     })), React.createElement("div", {
@@ -86,6 +88,7 @@ function renderForm(param) {
                 }, React.createElement("input", {
                       className: " appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400",
                       id: "subject",
+                      name: "subject",
                       placeholder: "Subject",
                       type: "text"
                     })), React.createElement("div", {
@@ -98,6 +101,7 @@ function renderForm(param) {
                       rows: 3
                     })), React.createElement("input", {
                   className: "_formsubmit_id hidden",
+                  name: "_formsubmit_id",
                   type: "text"
                 }), React.createElement("input", {
                   className: "Submit flex-none bg-gray-900 uppercase hover:bg-gray-600 focus:outline-none focus:bg-primary-800 text-sm text-white font-bold py-2 px-6 tracking-normal rounded-lg mt-4",
