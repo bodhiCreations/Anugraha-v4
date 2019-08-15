@@ -42,6 +42,7 @@ let renderForm = () =>
       <input
         id="name"
         type_="text"
+        name="name"
         placeholder="Enter your name"
         className="name appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400"
       />
@@ -50,6 +51,7 @@ let renderForm = () =>
       <input
         id="email"
         type_="email"
+        name="email"
         placeholder="Enter your email"
         className="email appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400"
       />
@@ -58,6 +60,7 @@ let renderForm = () =>
       <input
         id="subject"
         type_="text"
+        name="subject"
         placeholder="Subject"
         className=" appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400"
       />
@@ -71,7 +74,7 @@ let renderForm = () =>
         rows=3
       />
     </div>
-    <input className="_formsubmit_id hidden" type_="text" />
+    <input className="_formsubmit_id hidden" name="_formsubmit_id" type_="text" >
     <input
       className="Submit flex-none bg-gray-900 uppercase hover:bg-gray-600 focus:outline-none focus:bg-primary-800 text-sm text-white font-bold py-2 px-6 tracking-normal rounded-lg mt-4"
       value="Send Message"
