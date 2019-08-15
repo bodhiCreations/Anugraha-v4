@@ -61,6 +61,51 @@ function renderText(caption, description) {
                       }), description)));
 }
 
+function renderForm(param) {
+  return React.createElement("form", {
+              className: "max-w-xl",
+              id: "contactform",
+              action: "https://formsubmit.io/send/bodhish@gmail.com",
+              method: "POST"
+            }, React.createElement("div", {
+                  className: "w-full mt-4"
+                }, React.createElement("input", {
+                      className: "name appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400",
+                      id: "name",
+                      placeholder: "Enter your name",
+                      type: "text"
+                    })), React.createElement("div", {
+                  className: "w-full mt-4"
+                }, React.createElement("input", {
+                      className: "email appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400",
+                      id: "email",
+                      placeholder: "Enter your email",
+                      type: "email"
+                    })), React.createElement("div", {
+                  className: "w-full mt-4"
+                }, React.createElement("input", {
+                      className: " appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400",
+                      id: "subject",
+                      placeholder: "Subject",
+                      type: "text"
+                    })), React.createElement("div", {
+                  className: "w-full mt-4"
+                }, React.createElement("textarea", {
+                      className: "message appearance-none mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400",
+                      id: "message",
+                      name: "message",
+                      placeholder: "Your message",
+                      rows: 3
+                    })), React.createElement("input", {
+                  className: "_formsubmit_id hidden",
+                  type: "text"
+                }), React.createElement("input", {
+                  className: "Submit flex-none bg-gray-900 uppercase hover:bg-gray-600 focus:outline-none focus:bg-primary-800 text-sm text-white font-bold py-2 px-6 tracking-normal rounded-lg mt-4",
+                  type: "submit",
+                  value: "Send Message"
+                }));
+}
+
 function renderlines(description) {
   return React.createElement("div", undefined, $$Array.map((function (para) {
                     return React.createElement("p", {
@@ -147,6 +192,7 @@ function Home(Props) {
                       "We encourage guests to take things slow, enjoy the food and the environment. The local\n            boatman offers rides on the river that is the artery of this area. We can also arrange for a\n            tour of key historical sites around Kottayam.",
                       "The airport nearest to Kottayam city is the Kochi International airport, which is 2.5 hours\n            away.",
                       "For more information and further details, please write to us contact@anugrahakerala.com or give us a call on +9194956 31122.",
+                      "Follow us on Instagram via @anugrahakerala",
                       "We are grateful to our friends who photographed Anugraha: Ashish Sahi, Derry Moore, and Wei Leng Tay."
                     ])), React.createElement("section", {
                   className: "md:py-4pt-10 pb-4"
@@ -163,7 +209,15 @@ function Home(Props) {
                               "Aimanam.",
                               "Kottayam 686015",
                               "Kerala, India"
-                            ])))));
+                            ])))), React.createElement("section", {
+                  className: "md:py-4pt-10 pb-4"
+                }, renderText("EMAIL US", /* array */[""]), React.createElement("div", {
+                      className: "md:flex w-full md:-mt-10 -mt-4 mt-4 py-4"
+                    }, React.createElement("div", {
+                          className: "md:w-2/5 md:pt-0 pt-2 justify-right"
+                        }), React.createElement("div", {
+                          className: "md:w-3/5 md:text-xl text-md md:pt-0 pt-2 justify-right -mt-12"
+                        }, renderForm(/* () */0)))));
 }
 
 var make = Home;
@@ -189,6 +243,7 @@ exports.b02 = b02;
 exports.b03 = b03;
 exports.b04 = b04;
 exports.renderText = renderText;
+exports.renderForm = renderForm;
 exports.renderlines = renderlines;
 exports.renderHeading = renderHeading;
 exports.renderTwoImages = renderTwoImages;

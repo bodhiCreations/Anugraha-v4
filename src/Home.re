@@ -32,6 +32,53 @@ let renderText = (caption, description) =>
     </div>
   </div>;
 
+let renderForm = () =>
+  <form
+    className="max-w-xl"
+    id="contactform"
+    action="https://formsubmit.io/send/bodhish@gmail.com"
+    method="POST">
+    <div className="w-full mt-4">
+      <input
+        id="name"
+        type_="text"
+        placeholder="Enter your name"
+        className="name appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400"
+      />
+    </div>
+    <div className="w-full mt-4">
+      <input
+        id="email"
+        type_="email"
+        placeholder="Enter your email"
+        className="email appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400"
+      />
+    </div>
+    <div className="w-full mt-4">
+      <input
+        id="subject"
+        type_="text"
+        placeholder="Subject"
+        className=" appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400"
+      />
+    </div>
+    <div className="w-full mt-4">
+      <textarea
+        className="message appearance-none mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400"
+        name="message"
+        placeholder="Your message"
+        id="message"
+        rows=3
+      />
+    </div>
+    <input className="_formsubmit_id hidden" type_="text" />
+    <input
+      className="Submit flex-none bg-gray-900 uppercase hover:bg-gray-600 focus:outline-none focus:bg-primary-800 text-sm text-white font-bold py-2 px-6 tracking-normal rounded-lg mt-4"
+      value="Send Message"
+      type_="submit"
+    />
+  </form>;
+
 let renderlines = description =>
   <div>
     {
@@ -150,6 +197,7 @@ let make = () =>
             "The airport nearest to Kottayam city is the Kochi International airport, which is 2.5 hours
             away.",
             "For more information and further details, please write to us contact@anugrahakerala.com or give us a call on +9194956 31122.",
+            "Follow us on Instagram via @anugrahakerala",
             "We are grateful to our friends who photographed Anugraha: Ashish Sahi, Derry Moore, and Wei Leng Tay.",
           |],
         )
@@ -171,6 +219,16 @@ let make = () =>
               "Kerala, India",
             |])
           }
+        </div>
+      </div>
+    </section>
+    <section className="md:py-4pt-10 pb-4">
+      {renderText("EMAIL US", [|""|])}
+      <div className="md:flex w-full md:-mt-10 -mt-4 mt-4 py-4">
+        <div className="md:w-2/5 md:pt-0 pt-2 justify-right" />
+        <div
+          className="md:w-3/5 md:text-xl text-md md:pt-0 pt-2 justify-right -mt-12">
+          {renderForm()}
         </div>
       </div>
     </section>
