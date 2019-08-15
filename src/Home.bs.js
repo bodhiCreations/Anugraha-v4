@@ -48,7 +48,7 @@ var b04 = (require('./assets/BACKWATERS/04.jpg'));
 
 function renderText(caption, description) {
   return React.createElement("div", {
-              className: "md:flex w-full md:mt-10 mt-4 py-4"
+              className: "md:flex w-full md:mt-8 mt-4 py-4"
             }, React.createElement("div", {
                   className: "md:w-2/5 md:text-4xl text-2xl"
                 }, caption), React.createElement("div", {
@@ -65,7 +65,7 @@ function renderForm(param) {
   return React.createElement("form", {
               className: "max-w-xl",
               id: "contactform",
-              action: "https://formsubmit.io/send/bodhish@gmail.com",
+              action: "https://formspree.io/bodhish@gmail.com",
               method: "POST"
             }, React.createElement("div", {
                   className: "w-full mt-4"
@@ -100,10 +100,6 @@ function renderForm(param) {
                       placeholder: "Your message",
                       rows: 3
                     })), React.createElement("input", {
-                  className: "_formsubmit_id hidden",
-                  name: "_formsubmit_id",
-                  type: "text"
-                }), React.createElement("input", {
                   className: "Submit flex-none bg-gray-900 uppercase hover:bg-gray-600 focus:outline-none focus:bg-primary-800 text-sm text-white font-bold py-2 px-6 tracking-normal rounded-lg mt-4",
                   type: "submit",
                   value: "Send Message"
@@ -171,7 +167,7 @@ function Home(Props) {
                           alt: "logo",
                           src: headerImgae
                         })), React.createElement("div", {
-                      className: "md:flex w-full md:mt-10 mt-4 py-4"
+                      className: "md:flex w-full md:mt-10 mt-4 py-4 pb-1"
                     }, React.createElement("div", {
                           className: "md:w-2/5 md:text-4xl text-2xl md:-mt-2"
                         }, "KERALAN GETAWAY"), React.createElement("div", {

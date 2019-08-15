@@ -21,7 +21,7 @@ let b03: string = [%raw "require('./assets/BACKWATERS/03.jpg')"];
 let b04: string = [%raw "require('./assets/BACKWATERS/04.jpg')"];
 
 let renderText = (caption, description) =>
-  <div className="md:flex w-full md:mt-10 mt-4 py-4">
+  <div className="md:flex w-full md:mt-8 mt-4 py-4">
     <div className="md:w-2/5 md:text-4xl text-2xl"> {caption |> str} </div>
     <div className="md:w-3/5 md:text-xl text-md md:pt-0 pt-2">
       {
@@ -74,7 +74,6 @@ let renderForm = () =>
         rows=3
       />
     </div>
-    <input className="_formsubmit_id hidden" name="_formsubmit_id" type_="text" />
     <input
       className="Submit flex-none bg-gray-900 uppercase hover:bg-gray-600 focus:outline-none focus:bg-primary-800 text-sm text-white font-bold py-2 px-6 tracking-normal rounded-lg mt-4"
       value="Send Message"
@@ -123,7 +122,7 @@ let make = () =>
         <img className="float-center" src=logo alt="logo" />
       </div>
       <div className="mt-4"> <img src=headerImgae alt="logo" /> </div>
-      <div className="md:flex w-full md:mt-10 mt-4 py-4">
+      <div className="md:flex w-full md:mt-10 mt-4 py-4 pb-1">
         <div className="md:w-2/5 md:text-4xl text-2xl md:-mt-2">
           {"KERALAN GETAWAY" |> str}
         </div>
