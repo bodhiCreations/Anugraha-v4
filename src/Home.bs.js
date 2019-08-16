@@ -65,7 +65,7 @@ function renderForm(param) {
   return React.createElement("form", {
               className: "max-w-xl",
               id: "contactform",
-              action: "https://formspree.io/bodhish@gmail.com",
+              action: "https://formspree.io/contact@anugrahakerala.com",
               method: "POST"
             }, React.createElement("div", {
                   className: "w-full mt-4"
@@ -74,6 +74,7 @@ function renderForm(param) {
                       id: "name",
                       name: "name",
                       placeholder: "Enter your name",
+                      required: true,
                       type: "text"
                     })), React.createElement("div", {
                   className: "w-full mt-4"
@@ -82,6 +83,7 @@ function renderForm(param) {
                       id: "email",
                       name: "email",
                       placeholder: "Enter your email",
+                      required: true,
                       type: "email"
                     })), React.createElement("div", {
                   className: "w-full mt-4"
@@ -90,6 +92,7 @@ function renderForm(param) {
                       id: "subject",
                       name: "subject",
                       placeholder: "Subject",
+                      required: true,
                       type: "text"
                     })), React.createElement("div", {
                   className: "w-full mt-4"
@@ -98,6 +101,7 @@ function renderForm(param) {
                       id: "message",
                       name: "message",
                       placeholder: "Your message",
+                      required: true,
                       rows: 3
                     })), React.createElement("input", {
                   className: "Submit flex-none bg-gray-900 uppercase hover:bg-gray-600 focus:outline-none focus:bg-primary-800 text-sm text-white font-bold py-2 px-6 tracking-normal rounded-lg mt-4",

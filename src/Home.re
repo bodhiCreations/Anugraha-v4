@@ -36,7 +36,7 @@ let renderForm = () =>
   <form
     className="max-w-xl"
     id="contactform"
-    action="https://formspree.io/bodhish@gmail.com"
+    action="https://formspree.io/contact@anugrahakerala.com"
     method="POST">
     <div className="w-full mt-4">
       <input
@@ -44,6 +44,7 @@ let renderForm = () =>
         type_="text"
         name="name"
         placeholder="Enter your name"
+        required=true
         className="name appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400"
       />
     </div>
@@ -52,6 +53,7 @@ let renderForm = () =>
         id="email"
         type_="email"
         name="email"
+        required=true
         placeholder="Enter your email"
         className="email appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400"
       />
@@ -61,6 +63,7 @@ let renderForm = () =>
         id="subject"
         type_="text"
         name="subject"
+        required=true
         placeholder="Subject"
         className=" appearance-none h-10 mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400"
       />
@@ -69,6 +72,7 @@ let renderForm = () =>
       <textarea
         className="message appearance-none mt-1 block w-full text-gray-800 border border-gray-400 rounded py-2 px-4 text-sm bg-gray-100 hover:bg-gray-200 focus:outline-none focus:bg-white focus:border-primary-400"
         name="message"
+        required=true
         placeholder="Your message"
         id="message"
         rows=3
