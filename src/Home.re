@@ -201,7 +201,7 @@ let make = () =>
     <section className="-mt-10">
       {
         renderText(
-          "REACHING ANUGRAHA",
+          "GETTING HERE",
           [|
             "The airport nearest to us is the Cochin International Airport, which is 2.5 hours away. Upon request, we can arrange for pick-up and drop-off to the airport.",
           |],
