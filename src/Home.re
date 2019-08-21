@@ -193,7 +193,7 @@ let make = () =>
             "The property has a swimming pool that is suitable for adults and children. It is located within a pool house that also contains a massage room where, upon request, we can arrange for a traditional therapeutic Keralan massage.",
             "The vast greens of the property and the village offer great prospects for long walks, and birdwatching.",
             "Villa Anugraha is located along the backwaters, within some of the most beautiful boating routes in the state. Take a languorous ride along the canals in a snake boat, captained by a local boatman.",
-            "Birds are the constant background choir of this estate. If you’d like to see the songsters then there are plenty of opportunities to sight families of kingfisher, schoolboy warbler, woodpecker, egret, duck, heron, Brahminy eagle, and many other species.",
+            "Birds are the constant background choir of this estate. If you'd like to see the songsters then there are plenty of opportunities to sight families of kingfisher, schoolboy warbler, woodpecker, egret, duck, heron, Brahminy eagle, and many other species.",
           |],
         )
       }
