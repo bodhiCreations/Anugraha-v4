@@ -122,23 +122,24 @@ let renderThreeImages = (image1, image2, image3) =>
 let make = () =>
   <div>
     <section className="md:py-10 pt-10 pb-4">
-      <div className="flex justify-center clearfix px-4 md:pb-10 pb-4">
-        <img className="float-center" src=logo alt="logo" />
+      <div className="text-center">
+        <div className="flex justify-center clearfix px-4 md:pb-10 pb-4">
+          <img className="float-center" src=logo alt="logo" />
+        </div>
+        <h1 className="text-sm md:text-xl md:-mt-6 -mt-2">
+          {"A BOUTIQUE HOMESTAY IN KERALA" |> str}
+        </h1>
       </div>
       <div className="mt-4"> <img src=headerImgae alt="logo" /> </div>
       <div className="md:flex w-full md:mt-10 mt-4 py-4 pb-1">
         <div className="md:w-2/5 md:text-4xl text-2xl md:-mt-2">
-          {"KERALAN GETAWAY" |> str}
+          {"A BOUTIQUE HOMESTAY" |> str}
         </div>
         <div className="md:w-3/5 md:text-xl text-md md:pt-0 pt-2">
           {
-            "Villa Anugraha is an elegant private residence in Aimanam, in the central Kerala district of
-          Kottayam. This home along the backwaters of the Meenachil River is an ode to slow living,
-          thoughtful design and the natural splendors of Kerala-that place they call 'God's Own
-          Country'. Aimanam was also the setting of Arundhati Roy's 1997 Booker Prize-winning novel "
+            "Anugraha is an elegant homestay in Aymanam, in the central Kerala district of Kottayam. Located near the popular lakefront tourist spot of Kumarakom, this house along the Meenachil River backwaters is an ode to slow living, Keralan hospitality and the natural splendours of this tropical travel destination&mdash;that place they call 'God's Own Country'"
             |> str
           }
-          <span className="italic"> {"The God of Small Things." |> str} </span>
         </div>
       </div>
     </section>
@@ -147,21 +148,11 @@ let make = () =>
       {renderTwoImages(ar02, ar03)}
       {
         renderText(
-          "ARCHITECTURE",
+          "THE VILLA",
           [|
-            "The Villa is designed as a one-key property, ensuring that guests have privacy and a certain
-            amount of seclusion, whilst staying within a thriving estate which is also inhabited by the
-            family that runs Anugraha, and includes their three dogs, Google, Zuma and Pepper. Guests
-            will have the Villa to themselves, much as if it were their own house in the Keralan
-            countryside.",
-            "Villa Anugraha is a classic Keralan building, constructed more than a century ago. It was
-            restored under the direction of architect Bijoy Jain of Studio Mumbai and styled with
-            contemporary art from the homeowner's private collection, and an edit of design objects.",
-            "It is part of a 7.5 - acre property that is punctuated by canals, a thriving pond, vegetable
-            garden, many varieties of tropical fruit trees, hardwoods, bamboo, and various kinds of
-            ferns, designed and laid out by award-winning landscape architect Tom Stuart-Smith. Being
-            in the tropical countryside, there are charming multilegged creatures everywhere; they mean
-            no harm and they are an essential part of the life cycle of our part of the world.",
+            "Guests will stay in an independent villa, attended by two members of the house-staff. We take just one booking at a time, in order to ensure guests have our full attention and care. Think of a stay at Anugraha as a holiday visit to a friend's home in the Kerala countryside.",
+            "The Villa is a heritage home, constructed more than a century ago. It was restored under the direction of architect Bijoy Jain of Studio Mumbai and styled with contemporary art from the family's private collection, and an edit of design objects.",
+            "There's plenty of quiet and privacy when you prefer, but when you'd rather not be alone then we invite you to take in the sights and sounds of the thriving estate, which is inhabited by the family that runs Anugraha, and includes their three dogs, Google, Zuma and Pepper. The 7.5 - acre property is punctuated by canals, a pond, vegetable garden, many varieties of tropical fruit trees, hardwoods, bamboo, and various kinds of ferns, designed and laid out by award-winning landscape architect Tom Stuart-Smith. (A literary factoid: Aymanam village is the setting of Arundhati Roy's 1997 Booker Prize-winning novel The God of Small Things.) Being in the tropical countryside, there are charming multilegged creatures everywhere; they mean no harm and they are an essential part of the life cycle of our part of the world.",
           |],
         )
       }
@@ -172,17 +163,22 @@ let make = () =>
       {renderThreeImages(i07, i08, i09)}
       {
         renderText(
-          "INTERIORS",
+          "FACILITIES",
           [|
-            "The Villa can house up to six people, between a Master Bedroom, and the Attic Room.
-            While public areas like the living and dining rooms do not have air-conditioning, the
-            bedrooms are airconditioned. And there's WIFI, of course. The property is perfectly suited
-            for a couple, a family of four or six, or a party of six.",
-            "Anugraha's visitors are guests of the family, and they will be served homecooked Keralan
-            meals and attended by members of the house staff. Those who wish to cook occasionally
-            may use the Villa's well-appointed kitchen, and we will help you get the ingredients together.
-            Much of the produce comes from the organic kitchen garden, and around the village where
-            Anugraha is located.",
+            "The Villa can house up to six people, between a Master Bedroom with a Queen-size bed, and the Attic Room, which has a Queen-size bed and two single beds, plus an en suite bathroom. While public areas like the living and dining rooms do not have air-conditioning, the bedrooms are airconditioned. And there's WIFI, of course. The property is perfectly suited for a couple, a family of four or six, or a party of six.",
+            "A bathroom enclosure on the ground floor is open-roofed and designed for separate but common use among the guests staying the villa.",
+            "The home also has a little study room and a well-appointed kitchen.",
+          |],
+        )
+      }
+    </section>
+    <section className="-mt-10">
+      {
+        renderText(
+          "DINING",
+          [|
+            "At Anugraha, we serve traditional Keralan food in the style of the Syrian Christian community, to which the homeowners belong. The food of our region can be deliciously vegan, with the generous use of coconut, rice and vegetables, or the complete opposite, with plenty of seafood and beef. It can be as spicy as it should be, or as spicy as you prefer. Please let us know at the time of reservation if you have any particular restrictions, and we will do our best to accommodate requests. ",
+            "Those who wish to cook occasionally may do so, and we are happy to advise. You may use anything from the organic kitchen garden, which has seasonal herbs and vegetables throughout the year. The larder is well-stocked with the basics (milk, bread, eggs) plus a wide choice of teas, and coffee.",
           |],
         )
       }
@@ -192,29 +188,44 @@ let make = () =>
       {renderTwoImages(b03, b04)}
       {
         renderText(
-          "FACTS",
+          "THINGS TO DO",
           [|
-            "The property has a swimming pool that is suitable for adults and children. It is located within
-            a pool house that also contains a massage room where, upon request, we can arrange for a
-            traditional therapeutic Keralan massage.",
-            "We encourage guests to take things slow, enjoy the food and the environment. The local
-            boatman offers rides on the river that is the artery of this area. We can also arrange for a
-            tour of key historical sites around Kottayam.",
-            "The airport nearest to Kottayam city is the Kochi International airport, which is 2.5 hours
-            away.",
-            "For more information and further details, please write to us contact@anugrahakerala.com or give us a call on +9194956 31122.",
-            "Follow us on Instagram via @anugrahakerala",
-            "We are grateful to our friends who photographed Anugraha: Ashish Sahi, Derry Moore, and Wei Leng Tay.",
+            "The property has a swimming pool that is suitable for adults and children. It is located within a pool house that also contains a massage room where, upon request, we can arrange for a traditional therapeutic Keralan massage.",
+            "The vast greens of the property and the village offer great prospects for long walks, and birdwatching.",
+            "Villa Anugraha is located along the backwaters, within some of the most beautiful boating routes in the state. Take a languorous ride along the canals in a snake boat, captained by a local boatman.",
+            "Birds are the constant background choir of this estate. If you’d like to see the songsters then there are plenty of opportunities to sight families of kingfisher, schoolboy warbler, woodpecker, egret, duck, heron, Brahminy eagle, and many other species.",
+          |],
+        )
+      }
+    </section>
+    <section className="-mt-10">
+      {
+        renderText(
+          "REACHING ANUGRAHA",
+          [|
+            "The airport nearest to us is the Cochin International Airport, which is 2.5 hours away. Upon request, we can arrange for pick-up and drop-off to the airport.",
           |],
         )
       }
     </section>
     <section className="md:py-4pt-10 pb-4">
-      {renderText("CONTACT", [|""|])}
+      {
+        renderText(
+          "GET IN TOUCH",
+          [|
+            "For more information and further details, please write to contact@anugrahakerala.com or give us a call on +9194956 31122.",
+            "Follow us on Instagram via @anugrahakerala.",
+          |],
+        )
+      }
       <div className="md:flex w-full md:-mt-10 -mt-4 mt-4 py-4">
         <div className="md:w-2/5 md:pt-0 pt-2 justify-right" />
         <div
-          className="md:w-3/5 md:text-xl text-md md:pt-0 pt-2 justify-right -mt-12">
+          className="md:w-3/5 md:text-xl text-md md:pt-0 pt-2 justify-right mt-4">
+          {renderForm()}
+          <div className="pt-6 pb-2 text-2xl font-semibold ">
+            {"Address" |> str}
+          </div>
           {
             renderlines([|
               "Anugraha Puthenpurayil",
@@ -229,13 +240,13 @@ let make = () =>
       </div>
     </section>
     <section className="md:py-4pt-10 pb-4">
-      {renderText("EMAIL US", [|""|])}
-      <div className="md:flex w-full md:-mt-10 -mt-4 mt-4 py-4">
-        <div className="md:w-2/5 md:pt-0 pt-2 justify-right" />
-        <div
-          className="md:w-3/5 md:text-xl text-md md:pt-0 pt-2 justify-right -mt-12">
-          {renderForm()}
-        </div>
-      </div>
+      {
+        renderText(
+          "CREDIT",
+          [|
+            "We are grateful to our friends who photographed Anugraha: Ashish Sahi, Derry Moore, and Wei Leng Tay.",
+          |],
+        )
+      }
     </section>
   </div>;
