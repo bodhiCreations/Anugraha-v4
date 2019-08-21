@@ -159,18 +159,21 @@ let make = () =>
             "There's plenty of quiet and privacy when you prefer, but when you'd rather not be alone then we invite you to take in the sights and sounds of the thriving estate, which is inhabited by the family that runs Anugraha, and includes their three dogs, Google, Zuma and Pepper. The 7.5 - acre property is punctuated by canals, a pond, vegetable garden, many varieties of tropical fruit trees, hardwoods, bamboo, and various kinds of ferns, designed and laid out by award-winning landscape architect Tom Stuart-Smith. "
             |> str
           }
-          <span className="italic">
+          <div className="pt-4">
             {
-              "(A literary factoid: Aymanam village is the setting of Arundhati Roy's 1997 Booker Prize-winning novel The God of Small Things.) "
+              "A literary factoid: Aymanam village is the setting of Arundhati Roy's 1997 Booker Prize-winning novel "
               |> str
             }
-          </span>
-          <span className="">
+            <span className="italic">
+              {"The God of Small Things. " |> str}
+            </span>
+          </div>
+          <div className="pt-4">
             {
               "Being in the tropical countryside, there are charming multilegged creatures everywhere; they mean no harm and they are an essential part of the life cycle of our part of the world."
               |> str
             }
-          </span>
+          </div>
         </div>
       </div>
     </section>
