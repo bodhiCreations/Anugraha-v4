@@ -167,9 +167,7 @@ function Home(Props) {
                               className: "float-center",
                               alt: "logo",
                               src: logo
-                            })), React.createElement("h1", {
-                          className: "text-sm md:text-xl md:-mt-6 -mt-2"
-                        }, "A BOUTIQUE HOMESTAY IN KERALA")), React.createElement("div", {
+                            }))), React.createElement("div", {
                       className: "mt-4"
                     }, React.createElement("img", {
                           alt: "logo",
@@ -180,13 +178,22 @@ function Home(Props) {
                           className: "md:w-2/5 md:text-4xl text-2xl md:-mt-2"
                         }, "A BOUTIQUE HOMESTAY"), React.createElement("div", {
                           className: "md:w-3/5 md:text-xl text-md md:pt-0 pt-2"
-                        }, "Anugraha is an elegant homestay in Aymanam, in the central Kerala district of Kottayam. Located near the popular lakefront tourist spot of Kumarakom, this house along the Meenachil River backwaters is an ode to slow living, Keralan hospitality and the natural splendours of this tropical travel destination&mdash;that place they call 'God's Own Country'"))), React.createElement("section", {
+                        }, "Anugraha is an elegant homestay in Aymanam, in the central Kerala district of Kottayam. Located near the popular lakefront tourist spot of Kumarakom, this house along the Meenachil River backwaters is an ode to slow living, Keralan hospitality and the natural splendours of this tropical travel destination."))), React.createElement("section", {
                   className: "md:py-4pt-10 pb-4"
                 }, renderTwoImages(ar01, ar04), renderTwoImages(ar02, ar03), renderText("THE VILLA", /* array */[
                       "Guests will stay in an independent villa, attended by two members of the house-staff. We take just one booking at a time, in order to ensure guests have our full attention and care. Think of a stay at Anugraha as a holiday visit to a friend's home in the Kerala countryside.",
-                      "The Villa is a heritage home, constructed more than a century ago. It was restored under the direction of architect Bijoy Jain of Studio Mumbai and styled with contemporary art from the family's private collection, and an edit of design objects.",
-                      "There's plenty of quiet and privacy when you prefer, but when you'd rather not be alone then we invite you to take in the sights and sounds of the thriving estate, which is inhabited by the family that runs Anugraha, and includes their three dogs, Google, Zuma and Pepper. The 7.5 - acre property is punctuated by canals, a pond, vegetable garden, many varieties of tropical fruit trees, hardwoods, bamboo, and various kinds of ferns, designed and laid out by award-winning landscape architect Tom Stuart-Smith. (A literary factoid: Aymanam village is the setting of Arundhati Roy's 1997 Booker Prize-winning novel The God of Small Things.) Being in the tropical countryside, there are charming multilegged creatures everywhere; they mean no harm and they are an essential part of the life cycle of our part of the world."
-                    ])), React.createElement("section", {
+                      "The Villa is a heritage home, constructed more than a century ago. It was restored under the direction of architect Bijoy Jain of Studio Mumbai and styled with contemporary art from the family's private collection, and an edit of design objects."
+                    ]), React.createElement("div", {
+                      className: "md:flex w-full"
+                    }, React.createElement("div", {
+                          className: "md:w-2/5 md:text-4xl text-2xl md:-mt-2"
+                        }), React.createElement("div", {
+                          className: "md:w-3/5 md:text-xl text-md md:pt-0 pt-2"
+                        }, "There's plenty of quiet and privacy when you prefer, but when you'd rather not be alone then we invite you to take in the sights and sounds of the thriving estate, which is inhabited by the family that runs Anugraha, and includes their three dogs, Google, Zuma and Pepper. The 7.5 - acre property is punctuated by canals, a pond, vegetable garden, many varieties of tropical fruit trees, hardwoods, bamboo, and various kinds of ferns, designed and laid out by award-winning landscape architect Tom Stuart-Smith. ", React.createElement("span", {
+                              className: "italic"
+                            }, "(A literary factoid: Aymanam village is the setting of Arundhati Roy's 1997 Booker Prize-winning novel The God of Small Things.) "), React.createElement("span", {
+                              className: ""
+                            }, "Being in the tropical countryside, there are charming multilegged creatures everywhere; they mean no harm and they are an essential part of the life cycle of our part of the world.")))), React.createElement("section", {
                   className: "md:py-4pt-10 pb-4"
                 }, renderThreeImages(i01, i02, i03), renderThreeImages(i04, i05, i06), renderThreeImages(i07, i08, i09), renderText("FACILITIES", /* array */[
                       "The Villa can house up to six people, between a Master Bedroom with a Queen-size bed, and the Attic Room, which has a Queen-size bed and two single beds, plus an en suite bathroom. While public areas like the living and dining rooms do not have air-conditioning, the bedrooms are airconditioned. And there's WIFI, of course. The property is perfectly suited for a couple, a family of four or six, or a party of six.",
@@ -203,10 +210,10 @@ function Home(Props) {
                       "The property has a swimming pool that is suitable for adults and children. It is located within a pool house that also contains a massage room where, upon request, we can arrange for a traditional therapeutic Keralan massage.",
                       "The vast greens of the property and the village offer great prospects for long walks, and birdwatching.",
                       "Villa Anugraha is located along the backwaters, within some of the most beautiful boating routes in the state. Take a languorous ride along the canals in a snake boat, captained by a local boatman.",
-                      "Birds are the constant background choir of this estate. If you\xe2\x80\x99d like to see the songsters then there are plenty of opportunities to sight families of kingfisher, schoolboy warbler, woodpecker, egret, duck, heron, Brahminy eagle, and many other species."
+                      "Birds are the constant background choir of this estate. If you'd like to see the songsters then there are plenty of opportunities to sight families of kingfisher, schoolboy warbler, woodpecker, egret, duck, heron, Brahminy eagle, and many other species."
                     ])), React.createElement("section", {
                   className: "-mt-10"
-                }, renderText("REACHING ANUGRAHA", /* array */["The airport nearest to us is the Cochin International Airport, which is 2.5 hours away. Upon request, we can arrange for pick-up and drop-off to the airport."])), React.createElement("section", {
+                }, renderText("GETTING HERE", /* array */["The airport nearest to us is the Cochin International Airport, which is 2.5 hours away. Upon request, we can arrange for pick-up and drop-off to the airport."])), React.createElement("section", {
                   className: "md:py-4pt-10 pb-4"
                 }, renderText("GET IN TOUCH", /* array */[
                       "For more information and further details, please write to contact@anugrahakerala.com or give us a call on +9194956 31122.",
@@ -219,7 +226,7 @@ function Home(Props) {
                           className: "md:w-3/5 md:text-xl text-md md:pt-0 pt-2 justify-right mt-4"
                         }, renderForm(/* () */0), React.createElement("div", {
                               className: "pt-6 pb-2 text-2xl font-semibold "
-                            }, "Address"), renderlines(/* array */[
+                            }, "ADDRESS"), renderlines(/* array */[
                               "Anugraha Puthenpurayil",
                               "Prapuzha Kadavu",
                               "Pulikkuttissery PO",
